@@ -261,20 +261,38 @@
       font-size: 0.94rem;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+    .book-us-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0 0.25rem;
     }
 
-    .small-muted {
-      color: var(--muted);
-      font-size: 0.92rem;
+    .book-us-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.72rem 1.35rem;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    .book-us-btn:hover {
+      background: #e24444;
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.34);
     }
 
     @media (max-width: 950px) {
-      .music-grid,
-      .contact-grid {
+      .music-grid {
         grid-template-columns: 1fr;
       }
 
@@ -291,7 +309,7 @@
       <a href="#music">Original Music & Live Video</a>
       <a href="#photos">Press Photos</a>
       <a href="#events">Past Events</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#book-us">Book Us</a>
     </div>
   </nav>
 
@@ -396,23 +414,12 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <div class="contact-grid">
-        <div class="panel">
-          <strong>Booking:</strong> Add booking email<br />
-          <strong>Management:</strong> Add manager name/email<br />
-          <strong>Phone:</strong> Add contact number
-        </div>
-        <div class="panel">
-          <strong>EPK URL:</strong>
-          <a href="https://dbaileyfam.github.io/theunaffectedepk/" target="_blank" rel="noopener noreferrer">
-            dbaileyfam.github.io/theunaffectedepk
-          </a>
-          <p class="small-muted">
-            Replace placeholders above when ready. This page is now structured for easy promoter and press sharing.
-          </p>
-        </div>
+    <section id="book-us">
+      <h2>Book Us</h2>
+      <div class="book-us-wrap">
+        <a class="book-us-btn" href="mailto:booking@801familystudios.com?subject=Booking%20Inquiry%20-%20The%20Unaffected">
+          Book Us
+        </a>
       </div>
     </section>
   </main>
