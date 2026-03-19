@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Unaffected | Electronic Press Kit</title>
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --bg-card: #17171c;
+      --text: #f6f6f8;
+      --muted: #b8b8c2;
+      --accent: #e53935;
+      --line: #2a2a33;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #1a1a21 0%, var(--bg) 48%);
+      line-height: 1.5;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.78rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0.35rem 0 0;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.1;
+    }
+
+    .tagline {
+      margin: 0.85rem auto 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.25);
+    }
+
+    .about {
+      grid-column: span 12;
+    }
+
+    .media {
+      grid-column: span 12;
+    }
+
+    .quick-facts {
+      grid-column: span 12;
+    }
+
+    @media (min-width: 920px) {
+      .about {
+        grid-column: span 7;
+      }
+
+      .quick-facts {
+        grid-column: span 5;
+      }
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0.55rem;
+      font-size: 1.15rem;
+      letter-spacing: 0.01em;
+    }
+
+    p {
+      margin: 0 0 0.85rem;
+      color: var(--text);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0.35rem 0 0;
+      padding-left: 1.1rem;
+    }
+
+    li {
+      margin: 0.42rem 0;
+      color: var(--muted);
+    }
+
+    a {
+      color: #7bb8ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #000;
+    }
+
+    .video-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery {
+      margin-top: 1rem;
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #121217;
+    }
+
+    @media (min-width: 860px) {
+      .gallery {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    footer {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 0.3rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #1f1f27;
+      color: var(--muted);
+      margin-right: 0.42rem;
+      margin-bottom: 0.42rem;
+      font-size: 0.85rem;
+    }
+
+    .media-tip {
+      margin-top: 0.65rem;
+    }
+
+    .press-photos-heading {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="kicker">Electronic Press Kit</p>
+      <h1>The Unaffected</h1>
+      <p class="tagline">Hard rock energy. Metal edge. Pop-rock hooks. Blues soul. Grunge attitude.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card about">
+        <h2>Band Bio</h2>
+        <p>
+          The Unaffected is a high-energy musical collective that fearlessly blends the raw power of hard rock and metal with the catchy melodies
+          of pop rock, the soulful depths of blues, and the rebellious spirit of grunge.
+        </p>
+        <p>
+          Born from a shared passion for diverse sounds, the band has cultivated a unique sonic identity that defies categorization. Called
+          The Unaffected, they are a rock band from Salt Lake City.
+        </p>
+      </article>
+
+      <aside class="card quick-facts">
+        <h2>Quick Facts</h2>
+        <span class="pill">Genre: Rock / Hard Rock</span>
+        <span class="pill">From: Salt Lake City, UT</span>
+        <span class="pill">Name: The Unaffected</span>
+        <ul>
+          <li>
+            Website:
+            <a href="https://unaffected.band/home" target="_blank" rel="noopener noreferrer">unaffected.band/home</a>
+          </li>
+          <li>Live-performance driven with a high-impact stage presence.</li>
+          <li>For booking, add contact details here (email / phone / manager).</li>
+        </ul>
+      </aside>
+
+      <article class="card media">
+        <h2>Featured Video</h2>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/vVkG9SHOvpI?si=FYnh1sYMIb0p8uJC"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <p class="muted media-tip">
+          Tip: Replace this section later with your newest single or strongest live performance clip.
+        </p>
+
+        <h2 class="press-photos-heading">Press Photos</h2>
+        <div class="gallery">
+          <img src="assets/live-stage-main.png" alt="The Unaffected performing live on stage" />
+          <img src="assets/whisky-a-go-go.png" alt="The Unaffected in front of Whiskey a Go Go marquee" />
+          <img src="assets/live-closeup.png" alt="The Unaffected live close-up performance" />
+          <img src="assets/live-stage-wide.png" alt="The Unaffected live stage shot" />
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>EPK for The Unaffected | Salt Lake City, Utah</p>
+    </footer>
+  </main>
+</body>
+</html>
