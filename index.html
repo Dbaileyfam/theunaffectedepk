@@ -144,7 +144,7 @@
 
     .music-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1fr;
       gap: 1rem;
     }
 
@@ -163,6 +163,13 @@
       inset: 0;
       width: 100%;
       height: 100%;
+    }
+
+    .spotify-embed {
+      margin-top: 0.9rem;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--line);
     }
 
     .track-list {
@@ -295,7 +302,7 @@
 
     <section id="music">
       <h2>Original Music & Live Video</h2>
-      <p class="section-intro">Lead with your strongest live clip, then list your standout tracks underneath.</p>
+      <p class="section-intro">Featured live video with Spotify artist player.</p>
       <div class="music-grid">
         <div class="panel">
           <div class="video-wrap">
@@ -308,15 +315,18 @@
               allowfullscreen
             ></iframe>
           </div>
-        </div>
-        <div class="panel">
-          <ul class="track-list">
-            <li>1. Add Your Top Track Title</li>
-            <li>2. Add Your Second Track Title</li>
-            <li>3. Add Your Third Track Title</li>
-            <li>4. Add Your Fourth Track Title</li>
-            <li>5. Add Your Fifth Track Title</li>
-          </ul>
+          <div class="spotify-embed">
+            <iframe
+              data-testid="embed-iframe"
+              src="https://open.spotify.com/embed/artist/39cjbK1fO9ln9UTm11hmtr?utm_source=generator&theme=0"
+              title="Spotify artist player"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
